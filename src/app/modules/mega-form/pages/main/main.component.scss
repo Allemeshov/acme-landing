@@ -1,0 +1,43 @@
+@use 'variables' as vars;
+
+.news-intro {
+  background-image: url(~src/assets/images/ACME_Background-Pattern.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 377px;
+  box-sizing: border-box;
+
+  h1 {
+    padding-top: 82px;
+    font-size: 81px;
+    text-transform: uppercase;
+    color: vars.$yellow;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+    &::selection, &::-moz-selection {
+      color: vars.$black !important;
+      background: vars.$yellow !important;
+    }
+  }
+
+  .news-paragraph {
+    padding-top: 39px;
+    max-width: 82%;
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px;
+    white-space: normal;
+    line-break: normal;
+    font-weight: 400;
+    font-family: arial, sans-serif;
+    letter-spacing: 1px;
+
+    &::selection, &::-moz-selection {
+      color: vars.$black !important;
+      background: vars.$yellow !important;
+    }
+  }
+}

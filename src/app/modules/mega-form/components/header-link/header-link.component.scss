@@ -1,0 +1,52 @@
+@use 'variables' as vars;
+
+.header-link-container {
+  min-width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  padding: 0 42px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  span {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: -40px;
+
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease 0s;
+
+
+  }
+
+  &:hover {
+    color: vars.$yellow;
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: vars.$yellow;
+  }
+}
+
+.selected, .header-link-container:hover {
+  color: vars.$yellow;
+}

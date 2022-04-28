@@ -1,0 +1,10 @@
+<div class="header-container container-padding">
+  <div class="logo"></div>
+  <div class="link-container">
+      <app-header-link *ngFor="let link of links">
+        {{ link }}
+      </app-header-link>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

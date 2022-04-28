@@ -31,8 +31,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/styles/styles.scss",
+              "src/assets/styles/base.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/assets/styles",
+                "./src/assets/images",
+                "./src/assets/icons"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -99,8 +107,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/styles/styles.scss",
+              "src/assets/styles/base.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/assets/styles",
+                "./src/assets/images",
+                "./src/assets/icons"
+              ]
+            },
             "scripts": []
           }
         }
