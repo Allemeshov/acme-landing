@@ -1,0 +1,62 @@
+@use 'variables' as vars;
+
+$article-height: 252px;
+$border-size: 4px;
+
+.article-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 34px;
+
+  box-sizing: border-box;
+  border-bottom: $border-size solid vars.$yellow;
+
+  .article-logo {
+    box-sizing: border-box;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc($article-height - $border-size);
+    background-image: url('~src/assets/images/cold-ocean.jpg');
+  }
+
+  .article-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .article {
+    height: calc($article-height - $border-size);
+
+    &__date {
+      width: 100%;
+      font-size: 20px;
+      line-height: 18px;
+    }
+    &__title {
+      font-size: 34px;
+      width: 100%;
+      color: #2c594e;
+      text-transform: uppercase;
+      line-height: 60px;
+    }
+    &__description {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 19px;
+      line-height: 32px;
+      margin-top: 7px;
+      //padding-right: 12px;
+    }
+    &__button-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    }
+  }
+}

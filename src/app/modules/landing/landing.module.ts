@@ -6,6 +6,9 @@ import {NewsDetailComponent} from './pages/news-detail/news-detail.component';
 import {BreadcrumbsModule} from "../../shared/modules/breadcrumbs/breadcrumbs.module";
 import {HeaderComponent} from './components/header/header.component';
 import {HeaderLinkComponent} from './components/header-link/header-link.component';
+import { ArticleComponent } from './components/article/article.component';
+import { ArticleDatePipe } from './pipes/article-date.pipe';
+import {YellowButtonModule} from "../../shared/modules/yellow-button/yellow-button.module";
 
 
 @NgModule({
@@ -13,7 +16,9 @@ import {HeaderLinkComponent} from './components/header-link/header-link.componen
     MainComponent,
     NewsDetailComponent,
     HeaderComponent,
-    HeaderLinkComponent
+    HeaderLinkComponent,
+    ArticleComponent,
+    ArticleDatePipe
   ],
   exports: [
     HeaderComponent
@@ -28,7 +33,8 @@ import {HeaderLinkComponent} from './components/header-link/header-link.componen
           {path: ':id', component: NewsDetailComponent}
         ]
       }
-    ])
+    ]),
+    YellowButtonModule
   ]
 })
 export class LandingModule {

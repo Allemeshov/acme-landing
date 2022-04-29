@@ -41,3 +41,27 @@
     }
   }
 }
+
+
+.body-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 84px;
+
+  row-gap: 1rem;
+
+  box-sizing: border-box;
+
+  .articles-column {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .contacts-column {
+    // TODO: remove styles
+    height: 200px;
+    background-color: red;
+  }
+}

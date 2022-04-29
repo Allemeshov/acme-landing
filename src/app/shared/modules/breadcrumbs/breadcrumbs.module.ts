@@ -8,12 +8,12 @@ import {RouterModule} from "@angular/router";
   declarations: [
     BreadcrumbComponent
   ],
-  exports: [
-    BreadcrumbComponent
-  ],
   imports: [
     CommonModule,
     RouterModule
+  ],
+  exports: [
+    BreadcrumbComponent
   ]
 })
 export class BreadcrumbsModule { }

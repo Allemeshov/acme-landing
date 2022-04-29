@@ -11,7 +11,7 @@ import {RouterModule} from "@angular/router";
     imports: [
         BrowserModule,
         RouterModule.forRoot([
-          { path: '', loadChildren: () => import('./modules/mega-form/landing.module').then(mf => mf.LandingModule) },
+          { path: '', loadChildren: () => import('./modules/landing/landing.module').then(mf => mf.LandingModule) },
         ])
     ],
   providers: [],

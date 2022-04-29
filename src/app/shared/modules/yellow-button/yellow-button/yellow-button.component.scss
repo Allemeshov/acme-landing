@@ -1,0 +1,55 @@
+@use 'variables' as vars;
+
+.yellow-button-container {
+  background-color: vars.$yellow;
+  width: 156px;
+  display: flex;
+  height: 47px;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 10px;
+
+  .arrow-wrapper {
+    width: 32px;
+    height: 100%;
+
+    transition: 0.3s ease-out 0s;
+
+    background-image: url('~src/assets/icons/Arrow-Right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .button-text {
+    transition: 0.3s ease-out 0s;
+
+    text-transform: uppercase;
+    color: vars.$black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+
+  &:hover {
+
+    .arrow-wrapper {
+      transform: translateX(5px);
+      fill: black;
+    }
+
+    .button-text {
+      transform: translateX(-5px);
+      color: white;
+    }
+  }
+
+}

@@ -11,3 +11,11 @@
 </section>
 
 <app-breadcrumb [breadcrumbs]="breadcrumbs"></app-breadcrumb>
+
+<section class="body-container container-padding">
+  <div class="articles-column">
+    <app-article *ngFor="let article of articles" [article]="article">
+    </app-article>
+  </div>
+  <div class="contacts-column"></div>
+</section>
