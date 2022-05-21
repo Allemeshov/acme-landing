@@ -17,7 +17,7 @@ $border-size: 4px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: calc($article-height - $border-size);
+    height: calc(#{$article-height} - #{$border-size});
     background-image: url('~src/assets/images/cold-ocean.jpg');
   }
 
@@ -29,7 +29,7 @@ $border-size: 4px;
   }
 
   .article {
-    height: calc($article-height - $border-size);
+    height: calc(#{$article-height} - #{$border-size});
 
     &__date {
       width: 100%;
